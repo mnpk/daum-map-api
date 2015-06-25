@@ -1,6 +1,6 @@
 {
   "name": "daum-map-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "다음 지도 API",
   "main": "src/daum-map-api.js",
   "scripts": {

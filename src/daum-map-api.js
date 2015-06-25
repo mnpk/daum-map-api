@@ -86,18 +86,8 @@ var transCoord = function(x, y, from, to, callback) {
     toCoord: to,
     output: 'json'
   }
-  https.get(url + '?' + querystring.stringify(params), function(res) {
-    buffer = ''
-    res.on('data', function(data) {
-      buffer += data
-    })
-    res.on('error', function(err) {
-      console.log(err)
-    })
-    res.on('end', function() {
-      var json = JSON.parse(buffer)
-      callback(json.x,json.y)
-    })
+  https_get(url, params, function(json) {
+    callback(json.x,json.y)
   })
 }
 
