@@ -69,6 +69,7 @@ var getMapImageLink = function(longitude, latitude, callback) {
       SCALE: 2.5,
       service: 'open'
     }
+    var querystring = require('querystring')
     var image_link = url + '?' + querystring.stringify(params) + '#.png'
     if (callback) {
       callback(image_link)
