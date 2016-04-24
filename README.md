@@ -29,7 +29,7 @@ daum.map('서울역', function(res) {
 ```javascript
 var daum = require('daum-map-api')
 
-daum.mapImage('서울역, function(res) {
+daum.mapImage('서울역', function(res) {
   console.log(res)
 }
 ```
